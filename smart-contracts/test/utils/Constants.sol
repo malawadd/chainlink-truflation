@@ -25,5 +25,5 @@ contract Constants is Test {
     address public user2 = address(0x90F79bf6EB2c4f870365E785982E1f101E93b906);
 
     address public ethFeed = makeAddr("ETH-USD");
-    address public btcFeed = makeAddr("BTC-USD");
+    address public sxuaFeed = makeAddr("sxua-USD");
 }
