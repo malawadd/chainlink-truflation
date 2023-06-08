@@ -3,7 +3,7 @@ import { parseError } from './errors'
 import { activeModal, toasts, activeError } from './stores'
 
 export function setPageTitle(title) {
-	document.title = `${title} | CAP`;
+	document.title = `${title} | FlationDEX`;
 }
 
 export function focusInput(id, select) {

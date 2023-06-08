@@ -28,7 +28,7 @@ export const CHAINDATA = {
 			wsNetwork: 'ws://localhost:8545/'
 		},
 		chainlinkSchema: "ethereum-mainnet-arbitrum-1",
-		subgraphUrl: "http://localhost:8000/subgraphs/name/flationdex",
+		subgraphUrl: "http://localhost:8000/subgraphs/name/FlationDEX-subgraph",
 		chainName: "Local Testnet",
 		chainId: '0x7A69', //chainId number in hexadecimal prefixed by 0x 
 		nativeAssetName: "GO",
