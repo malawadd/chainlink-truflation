@@ -25,10 +25,10 @@ contract DeployGoerli is Script {
     address quoter = address(0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6);
 
     // Deployment addresses for USDC
-    address GOERLI_USDC = address(0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8);
+    address GOERLI_USDC = address(0x8325F6AdBe43004A2670bAa519276584fEAbE85a);
 
     // Deployment addresses for WETH
-    address GOERLI_WETH = address(0x82aF49447D8a07e3bd95BD0d56f35241523fBab1);
+    address GOERLI_WETH = address(0xee189380Cfb9f390323A581e19a660820A58F3b8);
 
     // Chainlink Sequencer on GOERLIitrum and Optimism
     address GOERLI_SEQ = address(0xFdB631F5EE196F0ed6FAa767959853A9F217697D);
@@ -75,7 +75,7 @@ contract DeployGoerli is Script {
         address sequencer,
         address usdc,
         address ethFeed,
-        address btcFeed,
+        address xauFeed,
         address _swapRouter,
         address _quoter,
         address _weth,
@@ -89,11 +89,11 @@ contract DeployGoerli is Script {
         vm.startBroadcast(pk);
 
         // deploy contracts
-        chainlink = new Chainlink{salt: bytes32("CHAINLINK4")}(sequencer);
-        store = new Store{salt: bytes32("STORE4")}(_gov);
-        trade = new Trade{salt: bytes32("TRADE4")}(_gov);
-        pool = new Pool{salt: bytes32("POOL4")}(_gov);
-        clp = new CLP{salt: bytes32("CLP4")}(address(store));
+        chainlink = new Chainlink{salt: bytes32("CHAINLINK1")}();
+        store = new Store{salt: bytes32("STORE1")}(_gov);
+        trade = new Trade{salt: bytes32("TRADE1")}(_gov);
+        pool = new Pool{salt: bytes32("POOL1")}(_gov);
+        clp = new CLP{salt: bytes32("CLP1")}(address(store));
 
         // Link contracts
         store.link(address(trade), address(pool), usdc, address(clp));
@@ -116,10 +116,10 @@ contract DeployGoerli is Script {
             })
         );
         store.setMarket(
-            "BTC-USD",
+            "SXUA-USD",
             IStore.Market({
-                symbol: "BTC-USD",
-                feed: btcFeed,
+                symbol: "SXUA-USD",
+                feed: xauFeed,
                 maxLeverage: 50,
                 maxOI: 5000000 * CURRENCY_UNIT,
                 fee: 10,
