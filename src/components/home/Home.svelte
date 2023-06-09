@@ -140,7 +140,7 @@
 
   		<ul>
   			<li>50% of trading fees go to the pool.</li>
-  			<li>40% go to the treasury which buys back the CAP token, among other things.</li>
+  			<li>40% go to the treasury which buys back the protocol token, among other things.</li>
   			<li>10% go to keepers which trigger order executions.</li>
   		</ul>
 
