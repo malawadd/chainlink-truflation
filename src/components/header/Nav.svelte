@@ -7,11 +7,7 @@
 
 <style>
 
-	img {
-		height: 22px;
-		margin-right: 12px;
-		
-	}
+	
 
 	.nav {
 		display: flex;

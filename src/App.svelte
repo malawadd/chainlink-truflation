@@ -181,25 +181,7 @@
 	  border-right-color: var(--layer200);
 	}
 
-	.code-check {
-		padding: 25px;
-	}
-	.note {
-		padding: 25px;
-		max-width: 440px;
-		line-height: 1.318;
-	}
-	input {
-		width: 120px;
-		box-sizing: border-box;
-		margin-bottom: 10px;
-		font-size: inherit;
-		padding: 4px 10px;
-	}
-	button {
-		padding: 4px 10px;
-		width: 120px;
-	}
+	
 	:global(button.primary, button.secondary) {
 		padding: 0 var(--base-padding);
 		height: 42px;

@@ -25,19 +25,7 @@
 		gap: 10px; 
 	}
 
-	.settings {
-		margin-left: 20px;
-		display: flex;
-		align-items: center;
-		color: var(--text0);
-	}
-	.settings:hover {
-		color: var(--text100);
-	}
-	.settings :global(svg) {
-		fill: currentColor;
-		height: 20px;
-	}
+
 
 	.address {
 		display: flex;
@@ -84,10 +72,13 @@
 
 <div class='connect'>
 
+	<!-- svelte-ignore a11y-click-events-have-key-events -->
+	<!-- svelte-ignore a11y-missing-attribute -->
 	<a class='address' on:click|stopPropagation={() => {showModal('ChainSelect')}}>{[CHAINDATA[_chainId]['chainName']]}</a>
 
 	{#if $address}
 		{#if $unsupportedNetwork}
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div class='address wrong-network' on:click={() => {switchChains()}}>
 			Wrong Network
 		</div>
@@ -99,6 +90,8 @@
 		{/if}
 
 	{:else}
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-missing-attribute -->
 		<a class='connect' on:click|stopPropagation={() => {showModal('Connect')}}>Connect</a>
 	{/if}
 </div>

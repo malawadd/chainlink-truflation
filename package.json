@@ -1,7 +1,7 @@
 {
-	"name": "ui",
+	"name": "flationdex",
 	"version": "1.0.0",
-	"description": "FlationDEX",
+	"description": "FlationDEX ui for chainlink hackthon ",
 	"main": "index.js",
 	"scripts": {
 		"build": "rollup -c",
@@ -9,6 +9,16 @@
 		"start": "sirv build --single",
 		"deploy-ipfs": "npm run build && npx ipfs-deploy build"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/malawadd/chainlink-truflation.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/malawadd/chainlink-truflation/issues"
+	},
+	"homepage": "https://github.com/malawadd/chainlink-truflation#readme",
 	"devDependencies": {
 		"@rollup/plugin-alias": "^3.1.9",
 		"@rollup/plugin-commonjs": "^22.0.2",

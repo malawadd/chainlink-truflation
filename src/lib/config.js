@@ -1,5 +1,5 @@
 export const DEFAULT_LOCALE = 'en-GB';
-export const DEFAULT_MARKET = 'ETH-USD';
+export const DEFAULT_MARKET = 'SXUA-USD';
 export const DEFAULT_LEVERAGE = 50;
 export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000';
 export const BPS_DIVIDER = 10000;
@@ -8,7 +8,7 @@ export const DEFAULT_ORDERS_SORT_KEY = ['orderId', true];
 export const DEFAULT_POSITIONS_SORT_KEY = ['timestamp', true];
 export const DEFAULT_HISTORY_SORT_KEY = ['timestamp', true];
 export const DEFAULT_HISTORY_COUNT = 50;
-export const DEFAULT_CHAIN_ID = 42161;
+export const DEFAULT_CHAIN_ID = 5;
 export const CHAINDATA = {
 	31337: {
 		label: 'localhost',
@@ -27,7 +27,7 @@ export const CHAINDATA = {
 			network: 'testnetwork',
 			wsNetwork: 'ws://localhost:8545/'
 		},
-		chainlinkSchema: "ethereum-mainnet-arbitrum-1",
+		chainlinkSchema: "ethereum-mainnet-goeril-1",
 		subgraphUrl: "http://localhost:8000/subgraphs/name/FlationDEX-subgraph",
 		chainName: "Local Testnet",
 		chainId: '0x7A69', //chainId number in hexadecimal prefixed by 0x 

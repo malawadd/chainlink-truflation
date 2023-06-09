@@ -95,9 +95,7 @@
 <div class='home'>
 
   <header>
-  	<div class='logo'>
-  		<img src=''>
-  	</div>
+  
   	<h1>FlationDEX</h1>
   </header>
 
@@ -159,8 +157,10 @@
   		<h2>Partners</h2>
 
   		<div class='partners'>
-  			<a href='' target='_blank'><img src='im/partners/chainlink.png'></a>
-  			<a href='' target='_blank'><img src='im/partners/truflation.png'></a>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<a href='' target='_blank'><img src='im/partners/chainlink.png'></a>
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<a href='' target='_blank'><img src='im/partners/truflation.png'></a>
   		</div>
 		
 

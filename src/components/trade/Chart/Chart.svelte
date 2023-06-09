@@ -64,8 +64,6 @@ async function getChartData() {
       let priceHistory = await getChainlinkPriceHistory(
         CHAINLINK_CONTRACT_ADDRESSES[$selectedMarketInfo.symbol]
       );
-      console.log("price", priceHistory)
-      console.log(CHAINLINK_CONTRACT_ADDRESSES[$selectedMarketInfo.symbol])
 
       if (!priceHistory) return;
 
@@ -75,7 +73,7 @@ async function getChartData() {
       let latestBlock = await getLatestBlock()
       let latestBlockNumber = latestBlock.number
       let latestBlockTimestamp = latestBlock.timestamp
-      let averageBlockTime = 0.4; 
+      let averageBlockTime = 0.4; //2 blocks/s on arbitrum at the moment
 
       areaSeries.setData([])
 
